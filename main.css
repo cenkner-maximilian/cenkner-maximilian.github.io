@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    background: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 10;
+    align-items: center;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.nav-logo img {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links img {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.nav-links img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ARTICLE SECTIONS */
+.article {
+    max-width: 1100px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.article img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+}
+
+.article-text {
+    width: 50%;
+}
+
+.article-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.article-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.article-graphic {
+    width: 50%;
+}
+
+/* LEFT + RIGHT ALIGNMENT */
+.left {
+    order: 1;
+}
+.right {
+    order: 2;
+}
+
+/* Alternate layout for 2nd section (text left, graphic right) */
+.article:nth-child(even) .left {
+    order: 2;
+}
+.article:nth-child(even) .right {
+    order: 1;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 850px) {
+
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-text,
+    .article-graphic {
+        width: 100%;
+        order: unset !important;
+    }
+
+    .article img {
+        max-width: 280px;
+    }
+}
