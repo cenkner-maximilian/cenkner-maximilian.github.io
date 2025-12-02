@@ -89,7 +89,7 @@ section img {
 @media (max-width: 768px) {
     main {
         height: auto;
-        padding: 40px 0;
+        padding: 200px 0;
     }
 
     article {
