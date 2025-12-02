@@ -6,15 +6,31 @@
     <link rel="icon" type="image/x-icon" href="/assets/1x/min-logo.png">
     <title>Maximilián Cenkner</title>
     <link rel="stylesheet" href="https://use.typekit.net/vxp1odj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <script>
+        function toggleNavLinks() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
-        <a href=""><img src="assets/1x/about_me.png" alt="about_me" class="nav-item"></a>
-        <a href=""><img src="assets/1x/projects.png" alt="projects" class="nav-item"></a>
-        <a href=""><img src="assets/1x/logo.png" alt="logo-image" class="logo"></a>
-        <a href=""><img src="assets/1x/certificates.png" alt="certificates" class="nav-item"></a>
-        <a href=""><img src="assets/1x/vision.png" alt="vision" class="nav-item"></a>
+        <div class="links" id="myLinks">
+            <a class="link" href=""><img src="assets/1x/about_me.png" alt="about_me" class="nav-item"></a>
+            <a class="link" href=""><img src="assets/1x/projects.png" alt="projects" class="nav-item"></a>
+            <a class="link" href=""><img src="assets/1x/logo.png" alt="logo-image" class="logo"></a>
+            <a class="link" href=""><img src="assets/1x/certificates.png" alt="certificates" class="nav-item"></a>
+            <a class="link" href=""><img src="assets/1x/vision.png" alt="vision" class="nav-item"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavLinks()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
     <main>
