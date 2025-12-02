@@ -51,18 +51,6 @@ nav a {
     width: 150px;
 }
 
-@media (min-width: 768px) {
-    nav .links {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    nav a.icon {
-        display: none;
-    }
-}
 
 body {
     margin: 0;
@@ -100,10 +88,32 @@ section img {
 
 @media (max-width: 768px) {
     main {
-        height: 110vh;
+        height: auto;
+        padding: 40px 0;
     }
 
     article {
-        max-width: 60%;
+        max-width: 90%;
+    }
+
+    section h1 {
+        font-size: 36px;
+    }
+
+    section img {
+        width: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav .links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav a.icon {
+        display: none;
     }
 }
